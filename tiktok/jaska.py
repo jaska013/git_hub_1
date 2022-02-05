@@ -1,0 +1,33 @@
+import turtle
+jas = turtle.Pen()
+jas.ht()
+
+colors = ['aqua', 'black']
+jas.width(4)
+for i in range(2):
+    jas.fillcolor(colors[i%2])
+    jas.begin_fill()
+    jas.left(30)
+    jas.fd(10)
+    jas.left(40)
+    jas.circle(100,40)
+    jas.left(30)
+    jas.fd(10)
+    jas.left(40)
+    jas.circle(200, 40)
+    jas.end_fill()
+
+    jas.penup()
+    jas.fd(15)
+    jas.right(30)
+    jas.left(40)
+    jas.fd(10)
+    jas.right(50)
+    jas.left(40)
+    jas.fd(20)
+    jas.right(100)
+    jas.left(60)
+    jas.fd(40)
+    jas.right(30)
+    jas.left(20)
+    jas.pendown()
